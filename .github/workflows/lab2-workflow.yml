@@ -25,3 +25,8 @@ jobs:
       - name: "Printing Custom Message"
         run: |
           echo ${{inputs.custom_message}}
+      - name: "Printing run-job boolean value"
+        if: ${{inputs.run-job == 'true'}}
+        run: |
+           echo ${{inputs.run-job}}
+
