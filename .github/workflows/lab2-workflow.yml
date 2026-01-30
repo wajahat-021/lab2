@@ -24,4 +24,4 @@ jobs:
     steps:
       - name: "Printing Custom Message"
         run: |
-          echo "workflow_dispatch.custom_message"
+          echo ${{inputs.custom_message}}
